@@ -1,0 +1,23 @@
+{% extends 'Insta/main.html' %}
+
+{% block content %}
+
+<div class="auth">
+    <div class="auth__form">
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <label>Username</label>
+            <input type="text" name="username" placeholder="Enter Username">
+            
+              <label>Password</label>
+                <input type="password" name="password" placeholder="Enter Password">
+                
+            
+            
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}  

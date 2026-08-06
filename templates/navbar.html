@@ -9,7 +9,12 @@
     
 <a href="/">
     <h2>LOGO</h2>
-</a>
+</a> 
+<form action="{% url 'home' %}" method="GET">
+    <input type="text" name="q" placeholder="Search for topics...">
+    <button type="submit">Search</button>
+</form>
+<a href="{% url 'login' %}">Login</a>
 
 </body>
 </html>
